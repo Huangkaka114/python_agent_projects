@@ -31,5 +31,5 @@ def basic_chat(prompt):
 
 # 程序入口判断语句
 if __name__ == "__main__":
- result = basic_chat("你好，请告诉我你的年龄")
+ result = basic_chat("你好，请告诉我今天日期")
  print(result)
