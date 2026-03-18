@@ -1,7 +1,8 @@
 import os
 from dotenv import load_dotenv
-# ✅ 最新版 LangChain 官方导入（不会再报错！）
 from langchain_classic.agents import create_react_agent, AgentExecutor
+from langchain_core.chat_history import InMemoryChatMessageHistory
+from langchain_core.runnables import RunnableWithMessageHistory
 from langchain_core.tools import Tool
 from langchain_community.tools import DuckDuckGoSearchRun
 from langchain_core.prompts import PromptTemplate
@@ -18,6 +19,15 @@ llm = ChatOpenAI(
     model="qwen-turbo",
     temperature=0.1
 )
+
+store = {}
+
+# get_session_history 是一个工厂函数,它接收 session_id,返回对应这个用户的 BaseChatMessageHistory 对象
+def get_session_history(session_id: str):
+    if session_id not in store:
+        store[session_id] = InMemoryChatMessageHistory()
+    return store[session_id]
+
 
 # 搜索工具
 search = DuckDuckGoSearchRun()
@@ -39,6 +49,9 @@ Observation: the result of the action
 Thought: I now know the final answer
 Final Answer: the final answer to the original input question
 
+This is the conversation history:
+{history}
+
 Begin!
 Question: {input}
 Thought:{agent_scratchpad}
@@ -53,11 +66,17 @@ executor = AgentExecutor(
     handle_parsing_errors=True
 )
 
+message_history = RunnableWithMessageHistory(executor, get_session_history=get_session_history,
+                                             input_messages_key="input", history_messages_key="history")
+
 # 运行
 if __name__ == "__main__":
-    question = "2026年人工智能最热门的方向是什么？"
-    print("用户问题：", question)
-
-    result = executor.invoke({"input": question})
-    print("\n【最终回答】")
-    print(result["output"])
+    while True:
+        question = input("\n请输入问题：")
+        if question.lower() in ["exit", "quit", "q"]:
+            print("结束对话")
+            break
+        # session_id用来区分不同用户,传递给get_session_history
+        result = message_history.invoke({"input": question},config={"configurable": {"session_id": "huangkaka"}})
+        print("\n【最终回答】")
+        print(result["output"])
