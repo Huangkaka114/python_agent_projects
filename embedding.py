@@ -1,3 +1,5 @@
+import sys
+sys.stdin.reconfigure(encoding='utf-8')
 import os
 import json
 from openai import OpenAI
