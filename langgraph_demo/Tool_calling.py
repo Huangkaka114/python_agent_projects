@@ -7,6 +7,7 @@ from langgraph.graph import StateGraph,END,START
 from langgraph.prebuilt import ToolNode
 from typing_extensions import TypedDict
 from langgraph.graph.message import add_messages
+import subprocess
 
 # 让 AI 输出结构化指令 → 代码捕捉指令 → 执行真正功能 → 把结果丢回 AI
 # START → chat（AI思考）
@@ -35,8 +36,15 @@ def weather(city: str):
     """查询城市天气，传入城市名，如 北京、上海"""
     return f"{city} 今天晴天，温度 25℃"
 
+@tool
+def screenshot():
+    """用于本地截图"""
+    print("正在执行...")
+    subprocess.Popen("snippingtool")
+    return "截图成功"
+
 # 2.把工具列表传给 LLM
-tools = [search,calculator,weather]
+tools = [search,calculator,weather, screenshot]
 
 # 使用langChain的包装模型
 llm = ChatOpenAI(
@@ -89,14 +97,20 @@ builder.add_edge("tools","chat")
 graph = builder.compile()
 
 if __name__ == "__main__":
-    question = "介绍 huangkaka"
+    # question = "介绍 huangkaka"
     # question = "123 × 456 等于多少"
     # question = "北京天气怎么样"
+    question = "用你的工具帮我本地截图"
 
     initial_state = {
         "input": question,
         "messages": [
-            ("system", "你必须遵守两条铁律：1. 你的知识库没有实时、外部数据 2. 不允许猜测、不允许编造、不允许解释词义。3. 只要不确定 → 立刻输出 tool_calls 调用search。"),
+            ("system", """你是本地操控智能 Agent，你可以和用户聊天、并且使用工具帮助用户
+            但严格遵守规则：
+            1.收到用户输入时，首先判断用户意图，如果是闲聊，那么就先检查自己的知识库能否回答，若不能回答，就去调用对应
+            工具。如果不是闲聊而是执行某些操作，就去检查自己的工具能否完成，可以就执行，不行就正常回复。
+            2.禁止瞎编乱造
+            """ ),
             ("user", question)
         ]
     }
