@@ -1,0 +1,12 @@
+model:
+  temperature: 0.1
+  max_tokens: 1024
+
+#permission:
+#  admin: [search, calculator, screenshot, play_music]
+#  user: [search, calculator]
+#  guest: [search]
+
+paths:
+  memory_file: storage/memory_admin.json
+  log_path: storage/logs/agent.log

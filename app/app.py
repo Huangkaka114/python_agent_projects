@@ -16,6 +16,7 @@ api_key = os.getenv("API_KEY")
 base_url = os.getenv("BASE_URL")
 model = "qwen-turbo"
 
+
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = InMemoryChatMessageHistory()
 

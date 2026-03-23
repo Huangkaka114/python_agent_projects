@@ -22,8 +22,11 @@ def create_agent(api_key: str, base_url: str, model: str):
         # 任务
         你是一个严谨、可靠的智能助手，请严格按照规则回答用户问题。
         
-        # 可用工具zhe
+        # 可用工具
         {tools}
+        
+        # 工具名称列表
+        {tool_names}
         
         # 必须严格遵守的输出格式
         Question: {input}
@@ -49,6 +52,7 @@ def create_agent(api_key: str, base_url: str, model: str):
         Question: {input}
         Thought:{agent_scratchpad}""")
 
+    # 五个占位符
     agent = create_react_agent(llm, tools, prompt)
     executor = AgentExecutor(agent=agent, tools=tools, verbose=True, handle_parsing_errors=True,max_iterations=3,early_stopping_method="generate")
     return executor
