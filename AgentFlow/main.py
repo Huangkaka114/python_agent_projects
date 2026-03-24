@@ -30,6 +30,7 @@ def main():
 
     # 3. 加载指定角色持久化记忆
     state = load_memory(user_role)
+    # print(state)
     logger.info(f"加载历史记忆：用户角色={get_user_role(state)}，历史对话数={len(state['messages'])}")
 
     # 拼接系统提示词 + 用户输入，确保Agent严格遵循规则 state更新
@@ -45,6 +46,7 @@ def main():
 
         # 8. 输出结果，保存最新记忆（持久化）
         print("\n✅ AgentFlow 响应：", result["messages"][-1].content)
+        print(result)
         save_memory(result, user_role)
         logger.info("运行完成，已保存最新记忆")
 

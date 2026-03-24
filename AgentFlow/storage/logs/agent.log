@@ -219,3 +219,122 @@
 2026-03-23 23:36:37,401 - INFO - 运行完成，已保存最新记忆
 2026-03-23 23:36:37,401 - INFO - === AgentFlow 智能体运行结束 ===
 
+2026-03-24 19:59:27,464 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 19:59:34,770 - INFO - 运行完成，已保存最新记忆
+2026-03-24 20:09:27,830 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:09:27,830 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:09:41,350 - ERROR - 系统异常：'user_role'
+2026-03-24 20:09:41,350 - ERROR - 系统异常：'user_role'
+2026-03-24 20:12:04,851 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:12:04,851 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:12:04,851 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:12:06,154 - INFO - 运行完成，已保存最新记忆
+2026-03-24 20:12:06,154 - INFO - 运行完成，已保存最新记忆
+2026-03-24 20:12:06,154 - INFO - 运行完成，已保存最新记忆
+2026-03-24 20:12:45,261 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:12:45,261 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:12:45,261 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:12:58,699 - ERROR - 系统异常：'user_role'
+2026-03-24 20:12:58,699 - ERROR - 系统异常：'user_role'
+2026-03-24 20:12:58,699 - ERROR - 系统异常：'user_role'
+2026-03-24 20:13:55,289 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:13:55,289 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:13:55,289 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:13:55,863 - ERROR - 系统异常：Error code: 403 - {'error': {'message': 'The free tier of the model has been exhausted. If you wish to continue access the model on a paid basis, please disable the "use free tier only" mode in the management console.', 'type': 'AllocationQuota.FreeTierOnly', 'param': None, 'code': 'AllocationQuota.FreeTierOnly'}, 'id': 'chatcmpl-6d97d3b7-3534-91bd-9eac-ab469f1b2ac6', 'request_id': '6d97d3b7-3534-91bd-9eac-ab469f1b2ac6'}
+2026-03-24 20:13:55,863 - ERROR - 系统异常：Error code: 403 - {'error': {'message': 'The free tier of the model has been exhausted. If you wish to continue access the model on a paid basis, please disable the "use free tier only" mode in the management console.', 'type': 'AllocationQuota.FreeTierOnly', 'param': None, 'code': 'AllocationQuota.FreeTierOnly'}, 'id': 'chatcmpl-6d97d3b7-3534-91bd-9eac-ab469f1b2ac6', 'request_id': '6d97d3b7-3534-91bd-9eac-ab469f1b2ac6'}
+2026-03-24 20:13:55,863 - ERROR - 系统异常：Error code: 403 - {'error': {'message': 'The free tier of the model has been exhausted. If you wish to continue access the model on a paid basis, please disable the "use free tier only" mode in the management console.', 'type': 'AllocationQuota.FreeTierOnly', 'param': None, 'code': 'AllocationQuota.FreeTierOnly'}, 'id': 'chatcmpl-6d97d3b7-3534-91bd-9eac-ab469f1b2ac6', 'request_id': '6d97d3b7-3534-91bd-9eac-ab469f1b2ac6'}
+2026-03-24 20:16:53,421 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:16:53,421 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:16:53,421 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:16:54,160 - ERROR - 系统异常：Error code: 403 - {'error': {'message': 'The free tier of the model has been exhausted. If you wish to continue access the model on a paid basis, please disable the "use free tier only" mode in the management console.', 'type': 'AllocationQuota.FreeTierOnly', 'param': None, 'code': 'AllocationQuota.FreeTierOnly'}, 'id': 'chatcmpl-d497f1b9-91dd-9af8-8923-edc9f65776a1', 'request_id': 'd497f1b9-91dd-9af8-8923-edc9f65776a1'}
+2026-03-24 20:16:54,160 - ERROR - 系统异常：Error code: 403 - {'error': {'message': 'The free tier of the model has been exhausted. If you wish to continue access the model on a paid basis, please disable the "use free tier only" mode in the management console.', 'type': 'AllocationQuota.FreeTierOnly', 'param': None, 'code': 'AllocationQuota.FreeTierOnly'}, 'id': 'chatcmpl-d497f1b9-91dd-9af8-8923-edc9f65776a1', 'request_id': 'd497f1b9-91dd-9af8-8923-edc9f65776a1'}
+2026-03-24 20:16:54,160 - ERROR - 系统异常：Error code: 403 - {'error': {'message': 'The free tier of the model has been exhausted. If you wish to continue access the model on a paid basis, please disable the "use free tier only" mode in the management console.', 'type': 'AllocationQuota.FreeTierOnly', 'param': None, 'code': 'AllocationQuota.FreeTierOnly'}, 'id': 'chatcmpl-d497f1b9-91dd-9af8-8923-edc9f65776a1', 'request_id': 'd497f1b9-91dd-9af8-8923-edc9f65776a1'}
+2026-03-24 20:17:18,670 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:17:20,992 - ERROR - 系统异常：Error code: 400 - {'error': {'message': '<400> InternalError.Algo.InvalidParameter: Tool names are not allowed to be [search]', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_parameter_error'}, 'id': 'chatcmpl-d6660249-b79a-9b8e-a30d-9c3cfd670da6', 'request_id': 'd6660249-b79a-9b8e-a30d-9c3cfd670da6'}
+2026-03-24 20:18:37,932 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:19:09,399 - INFO - 运行完成，已保存最新记忆
+2026-03-24 20:19:53,213 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:20:25,127 - ERROR - 系统异常：'user_role'
+2026-03-24 20:25:56,335 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:25:57,394 - INFO - 加载历史记忆：用户角色=user，历史对话数=45
+2026-03-24 20:26:14,479 - INFO - 运行完成，已保存最新记忆
+2026-03-24 20:26:14,480 - INFO - === AgentFlow 智能体运行结束 ===
+
+2026-03-24 20:27:12,541 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:27:13,597 - INFO - 加载历史记忆：用户角色=user，历史对话数=47
+2026-03-24 20:27:39,915 - INFO - 运行完成，已保存最新记忆
+2026-03-24 20:27:39,916 - INFO - === AgentFlow 智能体运行结束 ===
+
+2026-03-24 20:28:28,939 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:28:29,980 - INFO - 加载历史记忆：用户角色=user，历史对话数=0
+2026-03-24 20:28:31,284 - WARNING - 权限拒绝：角色[user] 无权调用工具[send_email]
+2026-03-24 20:28:31,286 - INFO - 运行完成，已保存最新记忆
+2026-03-24 20:28:31,286 - INFO - === AgentFlow 智能体运行结束 ===
+
+2026-03-24 20:33:20,043 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:33:21,206 - INFO - 加载历史记忆：用户角色=user，历史对话数=3
+2026-03-24 20:33:22,283 - INFO - 运行完成，已保存最新记忆
+2026-03-24 20:33:22,283 - INFO - === AgentFlow 智能体运行结束 ===
+
+2026-03-24 20:36:27,416 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:36:28,614 - INFO - 加载历史记忆：用户角色=user，历史对话数=5
+2026-03-24 20:36:29,842 - INFO - 运行完成，已保存最新记忆
+2026-03-24 20:36:29,842 - INFO - === AgentFlow 智能体运行结束 ===
+
+2026-03-24 20:39:09,882 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:39:12,186 - INFO - 运行完成，已保存最新记忆
+2026-03-24 20:39:12,187 - INFO - === AgentFlow 智能体运行结束 ===
+
+2026-03-24 20:46:41,284 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:46:43,661 - INFO - 权限通过：角色[admin] 调用工具[send_email]
+2026-03-24 20:46:45,617 - INFO - 运行完成，已保存最新记忆
+2026-03-24 20:46:45,617 - INFO - === AgentFlow 智能体运行结束 ===
+
+2026-03-24 20:49:30,165 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:49:32,443 - INFO - 运行完成，已保存最新记忆
+2026-03-24 20:49:32,443 - INFO - === AgentFlow 智能体运行结束 ===
+
+2026-03-24 20:51:47,746 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:51:48,897 - INFO - 加载历史记忆：用户角色=user，历史对话数=0
+2026-03-24 20:51:50,114 - WARNING - 权限拒绝：角色[user] 无权调用工具[send_email]
+2026-03-24 20:51:50,115 - INFO - 运行完成，已保存最新记忆
+2026-03-24 20:51:50,115 - INFO - === AgentFlow 智能体运行结束 ===
+
+2026-03-24 20:52:56,442 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:52:57,592 - INFO - 加载历史记忆：用户角色=admin，历史对话数=7
+2026-03-24 20:52:58,766 - INFO - 运行完成，已保存最新记忆
+2026-03-24 20:52:58,766 - INFO - === AgentFlow 智能体运行结束 ===
+
+2026-03-24 20:54:24,051 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:54:25,219 - INFO - 加载历史记忆：用户角色=admin，历史对话数=9
+2026-03-24 20:54:26,641 - INFO - 运行完成，已保存最新记忆
+2026-03-24 20:54:26,641 - INFO - === AgentFlow 智能体运行结束 ===
+
+2026-03-24 20:55:48,922 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:55:50,068 - INFO - 加载历史记忆：用户角色=admin，历史对话数=11
+2026-03-24 20:55:51,600 - INFO - 权限通过：角色[admin] 调用工具[send_email]
+2026-03-24 20:55:53,997 - INFO - 运行完成，已保存最新记忆
+2026-03-24 20:55:53,997 - INFO - === AgentFlow 智能体运行结束 ===
+
+2026-03-24 20:58:02,968 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:58:04,113 - INFO - 加载历史记忆：用户角色=admin，历史对话数=15
+2026-03-24 20:58:05,889 - INFO - 运行完成，已保存最新记忆
+2026-03-24 20:58:05,889 - INFO - === AgentFlow 智能体运行结束 ===
+
+2026-03-24 20:59:33,248 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 20:59:34,429 - INFO - 加载历史记忆：用户角色=admin，历史对话数=17
+2026-03-24 20:59:36,342 - INFO - 运行完成，已保存最新记忆
+2026-03-24 20:59:36,342 - INFO - === AgentFlow 智能体运行结束 ===
+
+2026-03-24 21:01:56,306 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 21:01:57,450 - INFO - 加载历史记忆：用户角色=admin，历史对话数=0
+2026-03-24 21:01:58,615 - INFO - 权限通过：角色[admin] 调用工具[send_email]
+2026-03-24 21:02:00,485 - INFO - 运行完成，已保存最新记忆
+2026-03-24 21:02:00,485 - INFO - === AgentFlow 智能体运行结束 ===
+
+2026-03-24 21:03:27,281 - INFO - === AgentFlow 智能体启动 ===
+2026-03-24 21:03:28,446 - INFO - 加载历史记忆：用户角色=admin，历史对话数=0
+2026-03-24 21:03:29,611 - INFO - 权限通过：角色[admin] 调用工具[send_email]
+2026-03-24 21:03:31,451 - INFO - 运行完成，已保存最新记忆
+2026-03-24 21:03:31,451 - INFO - === AgentFlow 智能体运行结束 ===
+
